@@ -8,7 +8,7 @@ from uuid import uuid4
 from os import mkdir
 from pymongo import MongoClient
 from yuki import prompt
-from constants import SYSTEM_MESSAGE, FORMAT_EXAMPLE
+from constants import SYSTEM_MESSAGE, FORMAT_EXAMPLE, FORMAT_EXPLAINATION
 from openai import OpenAI
 
 class Director:
@@ -63,7 +63,8 @@ class Director:
                 system_message=SYSTEM_MESSAGE,
                 video_title=video_title,
                 video_description=video_description,
-                format_example=FORMAT_EXAMPLE
+                format_example=FORMAT_EXAMPLE,
+                format_explaination=FORMAT_EXPLAINATION
                 )
         )
 
